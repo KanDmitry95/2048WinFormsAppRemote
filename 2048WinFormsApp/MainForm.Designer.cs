@@ -1,6 +1,6 @@
 ﻿namespace _2048WinFormsApp
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -35,21 +35,22 @@
             // 
             label1.BackColor = SystemColors.ButtonShadow;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(10, 70);
             label1.Name = "label1";
             label1.Size = new Size(70, 70);
             label1.TabIndex = 0;
             label1.Text = "1024";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(386, 348);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "MainForm";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
